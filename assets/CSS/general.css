@@ -1,0 +1,19 @@
+:root{
+    --primary-color:#fdd931;
+    --second-color:#3c3c3c;
+    --primary-text-color:white;
+    --second-textcolor:black;
+
+    --primary-font-family:Helvetica;
+
+    --font-size:12px;
+
+    --space:5%;
+}
+
+*{
+    font-size: var(--font-size);
+    font-family: var(--primary-font-family);
+    box-sizing: border-box;   
+}
+
