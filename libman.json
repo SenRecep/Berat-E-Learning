@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.5.1",
+      "destination": "assets/Lib/jquery",
+      "files": [
+        "jquery.min.js"
+      ]
+    },
+    {
+      "library": "twitter-bootstrap@4.5.0",
+      "destination": "assets/Lib/twitter-bootstrap",
+      "files": [
+        "css/bootstrap.min.css",
+        "css/bootstrap.min.css.map",
+        "js/bootstrap.min.js",
+        "js/bootstrap.min.js.map",
+        "js/bootstrap.bundle.min.js",
+        "js/bootstrap.bundle.min.js.map"
+      ]
+    },
+    {
+      "library": "font-awesome@5.14.0",
+      "destination": "assets/Lib/fontAwesome",
+      "files": [
+        "css/all.min.css",
+        "js/all.min.js",
+        "webfonts/fa-solid-900.woff",
+        "webfonts/fa-solid-900.woff2",
+        "webfonts/fa-regular-400.woff",
+        "webfonts/fa-regular-400.woff2",
+        "webfonts/fa-regular-400.ttf",
+        "webfonts/fa-solid-900.ttf"
+      ]
+    },
+    {
+      "library": "open-iconic@1.1.1",
+      "destination": "assets/Lib/open-iconic",
+      "files": [
+        "font/css/open-iconic-bootstrap.min.css",
+        "font/fonts/open-iconic.eot",
+        "font/fonts/open-iconic.otf",
+        "font/fonts/open-iconic.svg",
+        "font/fonts/open-iconic.ttf",
+        "font/fonts/open-iconic.woff"
+      ]
+    },
+    {
+      "library": "animate.css@4.1.0",
+      "destination": "assets/Lib/animate_css",
+      "files": [
+        "animate.min.css"
+      ]
+    },
+    {
+      "library": "normalize@8.0.1",
+      "destination": "assets/Lib/normalize",
+      "files": [
+        "normalize.min.css"
+      ]
+    }
+  ]
+}

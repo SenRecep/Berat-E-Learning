@@ -1,17 +1,13 @@
 
 @media (max-width: 299.98px) { 
-    :root{
-        --font-size:4.7px;
-    }
+   
     .mobile-hidden{
         display: none;
     }
    
 }
 @media (min-width: 299.98px) and (max-width: 575.98px){
-    :root{
-        --font-size:6px;
-    }
+   
     .mobile-hidden{
         display: none;
     }
@@ -20,9 +16,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    :root{
-        --font-size:7px;
-    }
+
     .mobile-hidden{
         display: none;
     }
@@ -30,22 +24,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    :root{
-        --font-size:10px;
-    }
+   
    
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    :root{
-        --font-size:11px;
-    }
-    
+  
 }
 
 @media (min-width: 1200px) { 
-    :root{
-        --font-size:12px;
-    }
+  
     
  }
