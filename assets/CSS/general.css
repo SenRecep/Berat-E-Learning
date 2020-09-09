@@ -2,7 +2,7 @@
     --primary-color:#fdd931;
     --second-color:#3c3c3c;
     --primary-text-color:white;
-    --second-textcolor:black;
+    --second-text-color:black;
 
     --primary-font-family:Helvetica;
 
@@ -12,8 +12,11 @@
 }
 
 *{
+    box-sizing: border-box;   
+}
+
+html,body{
     font-size: var(--font-size);
     font-family: var(--primary-font-family);
-    box-sizing: border-box;   
 }
 
