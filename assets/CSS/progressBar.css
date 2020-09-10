@@ -1,0 +1,21 @@
+.progressBar{
+    width: 100%;
+}
+
+.progressBar .progressBar-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progressBar .progressBar-bar{
+    width: 100%;
+    background-color: #e6e6e6;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progressBar .progressBar-bar .bar{
+    height: inherit;
+    border-radius: inherit;
+    transition: width 1s;
+}

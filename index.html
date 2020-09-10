@@ -2,99 +2,112 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BERAT</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="./assets/Lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/Lib/animate_css/animate.min.css">
-    <link rel="stylesheet" href="./assets/Lib/fontAwesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/Lib/open-iconic/font/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/Lib/normalize/normalize.min.css">
-    <link rel="stylesheet" href="./assets/CSS/site.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BERAT</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/Lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/Lib/animate_css/animate.min.css">
+  <link rel="stylesheet" href="./assets/Lib/fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="./assets/Lib/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/Lib/normalize/normalize.min.css">
+  <link rel="stylesheet" href="./assets/CSS/site.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
 </head>
 
 <body>
-    <div class="main-content">
-
-        <!--NAVBAR ÇALIŞMIYOR-->
-        <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>-->
-
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#"><img class="logo-navbar" src="./assets/IMG/logo-2.png"> </a>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <div class="card shadow radius border-0">
-                        <div class="card-body">
-                            <div class="d-flex bd-highlight">
-                                <div class="p-2 bd-highlight "><img alt="Logo" src="./assets/IMG/cologo2.png" /></div>
-                                <div class="p-2 bd-highlight mt-3 mr-5">
-                                    <h5 class="cardtitle">Coşkunöz Holding A.Ş.</h5>
-                                    <span class="smallspan"> Akıllı Eğitim, Güvenli Deneyim</span>
-                                </div>
-                                <div class="ml-auto p-2 bd-highlight mt-4"> <a class="btn btn-wgrey btn-sm rounded" href="#"><i class="fa fa-sign-out-alt"></i> Çıkış Yap</a></div>
-                            </div>
-
-                        </div>
-
-                    </div>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><img class="logo-navbar" src="./assets/IMG/logo-2.png"> </a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <div class="card shadow radius border-0">
+            <div class="card-body">
+              <div class="d-flex bd-highlight">
+                <div class="p-2 bd-highlight "><img alt="Logo" src="./assets/IMG/cologo2.png" /></div>
+                <div class="p-2 bd-highlight mt-3 mr-5">
+                  <h5 class="cardtitle">Coşkunöz Holding A.Ş.</h5>
+                  <span class="smallspan"> Akıllı Eğitim, Güvenli Deneyim</span>
                 </div>
+                <div class="ml-auto p-2 bd-highlight mt-4"> <a class="btn btn-wgrey btn-sm rounded" href="#"><i
+                      class="fa fa-sign-out-alt"></i> Çıkış Yap</a></div>
+              </div>
+
             </div>
-        </nav>
 
+          </div>
+        </div>
+      </div>
+    </nav>
 
-
-
-        <header>
-        </header>
-        <main>
-            <section class="main-section">
-            </section>
-        </main>
-        <footer>
-        </footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <canvas id="myChart1"></canvas>
+        </div>
+        <div class="col-6">
+          <canvas id="myChart2"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="progressBar" data-color="#f6b900" data-title='Genel' data-max="100" data-val="50" >
+            <div class="progressBar-header">
+              <span class="title"></span>
+              <span class="progressCount"></span>
+            </div>
+            <div class="progressBar-bar">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="progressBar"  data-color="peru" data-title='Kimya'  data-max="120" data-val="30" >
+            <div class="progressBar-header">
+              <span class="title"></span>
+              <span class="progressCount"></span>
+            </div>
+            <div class="progressBar-bar">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="assets/Lib//jquery/jquery.min.js"></script> 
-    <script src="assets/Lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/JS/site.js"></script>
+
+
+    <header>
+    </header>
+    <main>
+      <section class="main-section">
+
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </div>
+  <script src="assets/Lib//jquery/jquery.min.js"></script>
+  <script src="assets/Lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/JS/site.js"></script>
+  <script src="assets/JS/singleDoughnut.js"></script>
+  <script src="assets/JS/Doughnut.js"></script>
+  <script src="assets/JS/progressBar.js"></script>
+
 </body>
 
 </html>
