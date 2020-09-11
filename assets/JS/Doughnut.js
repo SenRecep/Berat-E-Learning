@@ -54,7 +54,7 @@ var myChart = new Chart(document.getElementById('myChart2'), {
         labels: {
             render: 'label'
           },
-        cutoutPercentage: 80,
+        cutoutPercentage: 70,
         tooltips: {
             callbacks: {
               label: function(tooltipItem, data) {
