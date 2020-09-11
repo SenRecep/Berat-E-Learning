@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="./assets/Lib/fontAwesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/Lib/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="./assets/Lib/normalize/normalize.min.css">
+    <link rel="stylesheet" href="./assets/CSS/progressBar.css">
     <link rel="stylesheet" href="./assets/CSS/site.css">
+    <script src="assets/Lib//jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+
 </head>
 
 <body>
     <div class="main-content">
-
-        <!--NAVBAR ÇALIŞMIYOR-->
+         
         <!-- -->
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <a class="navbar-brand" href="#"><img class="logo-navbar" src="./assets/IMG/logo-2.png"> </a>
@@ -168,7 +171,17 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Eğitime Katılan Toplam Personel Sayısı</h5> 
                                     <h5 class="card-title">180 / 100</h5> 
-                                    
+                                    <div class="row">
+                                        <div class="col-12 mt-3 mb-3">
+                                          <div class="progressBar" data-color="#F6B900" data-title='Genel' data-max="100" data-val="50" ></div>
+                                        </div>
+                                        <div class="col-12 mt-3 mb-3">
+                                          <div class="progressBar"  data-color="#517AFB" data-title='Kimya'  data-max="100" data-val="30" ></div>
+                                        </div>
+                                        <div class="col-12 mt-3 mb-3">
+                                            <div class="progressBar"  data-color="#9DE7D4" data-title='Kimya'  data-max="100" data-val="30" ></div>
+                                          </div>
+                                      </div>
                                 </div>
             
                             </div>
@@ -204,10 +217,11 @@
                                             <div>
                                                 <div class="txtresult">
                                                     <h4 class="text-dark">30</h4>
-                                                     
+
                                                     <div class="seperatorr"></div>
                                                     <div class="smallspan fllw">Toplam İzlenme Süresi</div>
-                                                 </div>
+                                                </div>
+                                                
                                             </div>
                                             <div>
                                                 <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
@@ -232,7 +246,11 @@
                         <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-xs-12">
                             <div class="card shadow radius border-0">
                                 <div class="card-body">
-                                     
+                                    <div style="width:380px;">
+                                        <h5 class="card-title">Başarı Ortalaması</h5>
+                                        <canvas id="myChart2"></canvas>
+                                    </div>
+                                   
             
                                 </div>
             
@@ -241,8 +259,12 @@
                         <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
                             <div class="card shadow radius border-0">
                                 <div class="card-body">
-                                     
-            
+                                    <h5 class="card-title">Verilen Lisansların Dolma Tarihi</h5>
+                                    <h5 class="card-title">180 / 100</h5>
+                                    <div style="width:350px; height:170px;">
+                                        <canvas id="myChart1"></canvas>
+                                    </div>
+                                   
                                 </div>
             
                             </div>
@@ -292,9 +314,13 @@
         <footer>
         </footer>
     </div>
-    <script src="assets/Lib//jquery/jquery.min.js"></script> 
+   
     <script src="assets/Lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/JS/site.js"></script>
+    <script src="assets/JS/singleDoughnut.js"></script>
+    <script src="assets/JS/Doughnut.js"></script>
+    <script src="assets/JS/progressBar.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
 </body>
 
 </html>

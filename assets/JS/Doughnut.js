@@ -1,35 +1,39 @@
-var totalDay = 100;
+var total = 100;
 var value = 45;
+var value2 = 24;
+var value3=30;
 var data = {
     labels: [
-        `Tamamlanan Gün`,
-        ""
+        "resource-group-1",
+        "resource-group-2",
+        "resource-group-3",
+         
     ],
     datasets: [
         {
-            data: [value, totalDay - value],
+            data: [value, total - value],
             backgroundColor: [
-                "#f6b900",
+                "#517AFB",
                 "#e6e6e6"
             ],
             hoverBackgroundColor: [
-                "#f6b900",
+                "#517AFB",
                 "#e6e6e6"
             ]
         },
         {
-            data: [0, totalDay],
+            data: [value2, total - value],
             backgroundColor: [
-                "#f6b900",
+                "#CBD7FD",
                 "#e6e6e6"
             ],
             hoverBackgroundColor: [
-                "#f6b900",
+                "#CBD7FD",
                 "#e6e6e6"
             ]
         },
         {
-            data: [0, totalDay],
+            data: [value3, total - value],
             backgroundColor: [
                 "#f6b900",
                 "#e6e6e6"
@@ -54,10 +58,10 @@ var myChart = new Chart(document.getElementById('myChart2'), {
         },
         cutoutPercentage: 80,
         tooltips: {
-            filter: function (item, data) {
-                var label = data.labels[item.index];
-                if (label) return item;
-            }
+          //  filter: function (item, data) {
+               // var label = data.labels[item.index];
+               // if (label) return item;
+           // }
         }
     }
 });
