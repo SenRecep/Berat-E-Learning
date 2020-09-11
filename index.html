@@ -2,72 +2,325 @@
 <html lang="tr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BERAT</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <link rel="stylesheet" href="./assets/Lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/Lib/animate_css/animate.min.css">
-  <link rel="stylesheet" href="./assets/Lib/fontAwesome/css/all.min.css">
-  <link rel="stylesheet" href="./assets/Lib/open-iconic/font/css/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/Lib/normalize/normalize.min.css">
-  <link rel="stylesheet" href="./assets/CSS/site.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERAT</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/Lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/Lib/animate_css/animate.min.css">
+    <link rel="stylesheet" href="./assets/Lib/fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/Lib/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/Lib/normalize/normalize.min.css">
+    <link rel="stylesheet" href="./assets/CSS/progressBar.css">
+    <link rel="stylesheet" href="./assets/CSS/site.css">
+    <script src="assets/Lib//jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+
 </head>
 
 <body>
-  <div class="main-content">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#"><img class="logo-navbar" src="./assets/IMG/logo-2.png"> </a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <div class="card shadow radius border-0">
-            <div class="card-body">
-              <div class="d-flex bd-highlight">
-                <div class="p-2 bd-highlight "><img alt="Logo" src="./assets/IMG/cologo2.png" /></div>
-                <div class="p-2 bd-highlight mt-3 mr-5">
-                  <h5 class="cardtitle">Coşkunöz Holding A.Ş.</h5>
-                  <span class="smallspan"> Akıllı Eğitim, Güvenli Deneyim</span>
+    <div class="main-content">
+         
+        <!-- -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#"><img class="logo-navbar" src="./assets/IMG/logo-2.png"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 tcntr">
+                    <li class="nav-item active borderlr" >
+                        <h3 class="brand-title text-dark">İSG Eğitim Kiti</h3>
+                                <span class="smallspan"> Akıllı Eğitim, Güvenli Deneyim</span>
+                    </li> 
+                    <li class="nav-item my-auto">
+                        <h3 class="brand-title pl-3 text-gray">BREADCRUMP</h3>
+                    </li>
+                </ul>
+                <div class="card shadow radius border-0">
+                    <div class="card-body">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 bd-highlight "><img alt="Logo" src="./assets/IMG/cologo2.png" /></div>
+                            <div class="p-2 bd-highlight mt-3 mr-5">
+                                <h5 class="cardtitle">Coşkunöz Holding A.Ş.</h5>
+                                <span class="smallspan">İş Güvenliği Departmanı</span>
+                            </div>
+                            <div class="ml-auto p-2 bd-highlight mt-4"> <a class="btn bg-wgrey btn-sm rounded" href="#"><i class="fa fa-sign-out-alt"></i> Çıkış Yap</a></div>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="ml-auto p-2 bd-highlight mt-4"> <a class="btn btn-wgrey btn-sm rounded" href="#"><i
-                      class="fa fa-sign-out-alt"></i> Çıkış Yap</a></div>
-              </div>
-
             </div>
+        </nav>
+   
 
-          </div>
-        </div>
-      </div>
-    </nav>
+ 
 
-    <header>
-    </header>
-    <main>
-      <section class="main-section">
+        <header class="container-fluid">
 
-      </section>
-    </main>
-    <footer>
-    </footer>
-  </div>
-  <script src="assets/Lib//jquery/jquery.min.js"></script>
-  <script src="assets/Lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/JS/site.js"></script>
+            <ul class="nav nav-pills ml-5">
+                <li class="nav-item">
+                  <a class="nav-link activebutton" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                
+              </ul>
+              <hr class="pb3r">
+        </header>
 
+
+   
+        <main class="container-fluid">
+            <section class="main-section">
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                             <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-3 pb-3">
+                                        <div class="card shadow radius border-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <div class="txtresult">
+                                                            <h4 class="text-dark">30</h4>
+                                                             
+                                                            <div class="seperatorr"></div>
+                                                            <div class="smallspan fllw">Paket İsmi</div>
+                                                         </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
+                                                    </div>
+                                               </div>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-3 pb-3">
+                                        <div class="card shadow radius border-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <div class="txtresult">
+                                                            <h4 class="text-dark">30 Saat</h4>
+                                                             
+                                                            <div class="seperatorr"></div>
+                                                            <div class="smallspan fllw">Toplam Eğitim Süresi</div>
+                                                         </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
+                                                    </div>
+                                               </div>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-3 pb-3">
+                                        <div class="card shadow radius border-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <div class="txtresult">
+                                                            <h4 class="text-dark">56</h4>
+                                                             
+                                                            <div class="seperatorr"></div>
+                                                            <div class="smallspan fllw">Toplam İK Uzmanı</div>
+                                                         </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
+                                                    </div>
+                                               </div>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-3 pb-3">
+                                        <div class="card shadow radius border-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <div class="txtresult">
+                                                            <h4 class="text-dark">30</h4>
+                                                             
+                                                            <div class="seperatorr"></div>
+                                                            <div class="smallspan fllw">Toplam İSG Uzmanı</div>
+                                                         </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
+                                                    </div>
+                                               </div>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                    
+                             </div>
+                    </div>
+                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="card shadow radius border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Eğitime Katılan Toplam Personel Sayısı</h5> 
+                                    <h5 class="card-title">180 / 100</h5> 
+                                    <div class="row">
+                                        <div class="col-12 mt-3 mb-3">
+                                          <div class="progressBar" data-color="#F6B900" data-title='Genel' data-max="100" data-val="50" ></div>
+                                        </div>
+                                        <div class="col-12 mt-3 mb-3">
+                                          <div class="progressBar"  data-color="#517AFB" data-title='Kimya'  data-max="100" data-val="30" ></div>
+                                        </div>
+                                        <div class="col-12 mt-3 mb-3">
+                                            <div class="progressBar"  data-color="#9DE7D4" data-title='Kimya'  data-max="100" data-val="30" ></div>
+                                          </div>
+                                      </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-3 pb-3">
+                                <div class="card shadow radius border-0">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <div class="txtresult">
+                                                    <h4 class="text-dark">30</h4>
+                                                     
+                                                    <div class="seperatorr"></div>
+                                                    <div class="smallspan fllw">Verilen Sertifika Sayısı</div>
+                                                 </div>
+                                            </div>
+                                            <div>
+                                                <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
+                                            </div>
+                                       </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-3 pb-3">
+                                <div class="card shadow radius border-0">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <div class="txtresult">
+                                                    <h4 class="text-dark">30</h4>
+
+                                                    <div class="seperatorr"></div>
+                                                    <div class="smallspan fllw">Toplam İzlenme Süresi</div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div>
+                                                <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
+                                            </div>
+                                       </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    
+                    
+                </div>
+
+
+
+
+                <div class="row">
+                        <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="card shadow radius border-0">
+                                <div class="card-body">
+                                    <div style="width:380px;">
+                                        <h5 class="card-title">Başarı Ortalaması</h5>
+                                        <canvas id="myChart2"></canvas>
+                                    </div>
+                                   
+            
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="card shadow radius border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Verilen Lisansların Dolma Tarihi</h5>
+                                    <h5 class="card-title">180 / 100</h5>
+                                    <div style="width:350px; height:170px;">
+                                        <canvas id="myChart1"></canvas>
+                                    </div>
+                                   
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg- col-md-12 col-sm-12 col-xs-12">
+
+                                <div class="col-lg-12 col-xl-12">
+
+                                    <div class="card shadow radius border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <div class="txtresult">
+                                                        <h4 class="text-dark">Toplam VR Sayısı</h4>
+                                                         
+                                                        <div class="seperatorr"></div>
+                                                        <div class="smallspan fllw">Toplam VR Sayısı</div>
+                                                        
+                                                     </div>
+                                                     <div class="txtresult">
+                                                        <h4 class="text-dark">VR Eğitimleri</h4>
+                                                         
+                                                        <div class="seperatorr"></div>
+                                                        <div class="smallspan fllw">Toplam İzlenme Süresi</div>
+                                                        <div class="smallspan fllw">Toplam İzlenme Süresi</div>
+                                                        <div class="smallspan fllw">Toplam İzlenme Süresi</div>
+                                                     </div>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/IMG/Icon Ik Uzmani.svg"  class="rounded-circle cardimage" alt="Cinque Terre">
+                                                </div>
+                                           </div>
+                                        </div>
+                    
+                                    </div>
+
+
+                                </div>
+
+
+                         
+                        </div>
+                </div>
+               
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+   
+    <script src="assets/Lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/JS/site.js"></script>
+    <script src="assets/JS/singleDoughnut.js"></script>
+    <script src="assets/JS/Doughnut.js"></script>
+    <script src="assets/JS/progressBar.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
 </body>
 
 </html>

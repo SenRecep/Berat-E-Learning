@@ -4,8 +4,8 @@
     "\\assets",
     "\\assets\\IMG",
     "\\assets\\JS",
-    "\\assets\\Lib"
+    "\\assets\\Lib",
+    "\\assets\\Lib\\jquery"
   ],
-  "SelectedNode": "\\libman.json",
   "PreviewInSolutionExplorer": false
 }

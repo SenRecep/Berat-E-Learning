@@ -1,5 +1,7 @@
-var totalDay = 100;
+var total = 100;
 var value = 45;
+var value2 = 24;
+var value2 = 24;
 var data = {
     datasets: [
         {
